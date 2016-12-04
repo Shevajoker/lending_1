@@ -3,13 +3,24 @@
 .my_font {
   font: 20px sans-serif;
 }
+.white_border {
+  -webkit-box-shadow: 0px 0px 97px 8px #ffffff;
+  -moz-box-shadow: 0px 0px 97px 8px #ffffff;
+  box-shadow: 0px 0px 97px 8px #ffffff;
+}
+.white_border_inset {
+  -webkit-box-shadow: inset 0px 0px 20px 0px #ffffff;
+  -moz-box-shadow: inset 0px 0px 20px 0px #ffffff;
+  box-shadow: inset 0px 0px 20px 0px #ffffff;
+}
 /*============    HEADER    ===========*/
 * {
   margin: 0;
   padding: 0;
 }
 header {
-  color: #fff;
+  color: #ffffff;
+  background: #000000;
 }
 header ul {
   text-decoration: none;
@@ -19,6 +30,14 @@ header li {
   color: #888888;
   margin: 5px;
   padding: 5px;
+  transition: all 0.3s ease;
+}
+header li:hover {
+  -webkit-box-shadow: 0px 0px 97px 8px #ffffff;
+  -moz-box-shadow: 0px 0px 97px 8px #ffffff;
+  box-shadow: 0px 0px 97px 8px #ffffff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 header li a {
   color: #888888;
@@ -26,12 +45,12 @@ header li a {
 }
 header li a:hover {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 header .header_img {
   margin: 0;
   padding: 0;
-  background: url("http://devimg.com/1500x500") no-repeat center;
+  background: url("../img/head.jpg") no-repeat center;
   background-size: cover;
 }
 header .header_cont {
@@ -41,7 +60,7 @@ header .header_cont {
 /*============    ABOUT    ===========*/
 section#about {
   color: #ffffff;
-  background: #888888;
+  background: #111111;
 }
 section#about .container {
   padding: 50px;
@@ -50,7 +69,11 @@ section#about .main_img {
   height: 300px;
   width: 300px;
   border-radius: 50%;
-  background: url('http://devimg.com/300x300');
+  background: url('../img/ava.jpg') no-repeat center;
+  background-size: cover;
+  -webkit-box-shadow: 0px 0px 119px -7px #45b5d1;
+  -moz-box-shadow: 0px 0px 119px -7px #45b5d1;
+  box-shadow: 0px 0px 119px -7px #45b5d1;
 }
 /*============    PORTFOLIO    ===========*/
 section#portfolio {

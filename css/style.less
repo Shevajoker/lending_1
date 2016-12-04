@@ -4,10 +4,24 @@
 @light_grey: #999;
 @black: #000;
 @btn_color: #444;
+@dark_grey: #111;
 
 .my_font {
     font: 20px sans-serif;
 }
+
+.white_border {
+-webkit-box-shadow: 0px 0px 97px 8px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 97px 8px rgba(255,255,255,1);
+box-shadow: 0px 0px 97px 8px rgba(255,255,255,1);
+}
+.white_border_inset {
+    -webkit-box-shadow: inset 0px 0px 20px 0px rgba(255,255,255,1);
+    -moz-box-shadow: inset 0px 0px 20px 0px rgba(255,255,255,1);
+    box-shadow: inset 0px 0px 20px 0px rgba(255,255,255,1);
+}
+
+
 /*============    HEADER    ===========*/
 * {
     margin: 0;
@@ -15,7 +29,8 @@
 }
 
 header {
-    color: #fff;
+    color: @white;
+    background: @black;
     ul{
         text-decoration: none;
     
@@ -25,15 +40,24 @@ header {
         color: @grey;;
         margin: 5px;
         padding: 5px;
+      transition:all 0.3s ease;
+        
         &:hover {
-//            background: #999;
+             .white_border;
+//            .white_border_inset;
+            border-radius: 5px;
+            transition:all 0.3s ease;
+//            background: none;
         }
         a{
             color: @grey;
             text-decoration: none;
             &:hover {
                 text-decoration: none;
-                color: @black;;
+                color: @white;
+               
+                
+                
             }
         }
     }
@@ -42,7 +66,7 @@ header {
 //        width: 100%;
         margin: 0;
         padding: 0;
-        background: url("http://devimg.com/1500x500") no-repeat center;
+        background: url("../img/head.jpg") no-repeat center;
         background-size: cover;
     }
     
@@ -59,7 +83,7 @@ header {
 
 section#about {
     color: @white;
-    background: @grey;
+    background: @dark_grey;
     .container {
         
         padding: 50px;
@@ -68,7 +92,13 @@ section#about {
         height: 300px;
         width: 300px;
         border-radius: 50%;
-        background: url('http://devimg.com/300x300');
+        background: url('../img/ava.jpg') no-repeat center;
+        background-size: cover;
+        
+        -webkit-box-shadow: 0px 0px 119px -7px rgba(69,181,209,1);
+        -moz-box-shadow: 0px 0px 119px -7px rgba(69,181,209,1);
+        box-shadow: 0px 0px 119px -7px rgba(69,181,209,1);
+        
     }
 }
 
