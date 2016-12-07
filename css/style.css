@@ -97,6 +97,10 @@ section#mail .container {
   color: #ffffff;
   padding: 50px;
 }
+section#mail form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 section#mail form input {
   font: 20px sans-serif;
   width: 60%;
