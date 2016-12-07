@@ -61,14 +61,13 @@ header {
             }
         }
     }
-    
-    .header_img {
-//        width: 100%;
-        margin: 0;
-        padding: 0;
-        background: url("../img/head.jpg") no-repeat center;
-        background-size: cover;
-    }
+//    
+//    .header_img {
+//        margin: 0;
+//        padding: 0;
+//        background: url("../img/head.jpg") no-repeat center;
+//        background-size: cover;
+//    }
     
     .header_cont {
         margin-top: 150px;
@@ -76,7 +75,17 @@ header {
     }
 }
 
-
+.zoom{
+    overflow: hidden;
+    padding-bottom: 55%;
+}
+.zoom img{
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    max-width: 150%;
+    transform: translateX(-50%);
+}
 
 
 /*============    ABOUT    ===========*/
@@ -84,6 +93,7 @@ header {
 section#about {
     color: @white;
     background: @dark_grey;
+    position: relative;
     .container {
         
         padding: 50px;
@@ -111,6 +121,9 @@ section#about {
 section#portfolio {
   padding-top: 50px;
     padding-bottom: 50px;
+        position: relative;
+    background: @white;
+
 }
 
 
@@ -118,6 +131,8 @@ section#portfolio {
 /*============    MAIL    ===========*/
 
 section#mail {
+        position: relative;
+
     background: @grey;
     .container {
         color: @white;

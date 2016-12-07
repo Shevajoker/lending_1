@@ -47,20 +47,26 @@ header li a:hover {
   text-decoration: none;
   color: #ffffff;
 }
-header .header_img {
-  margin: 0;
-  padding: 0;
-  background: url("../img/head.jpg") no-repeat center;
-  background-size: cover;
-}
 header .header_cont {
   margin-top: 150px;
   margin-bottom: 150px;
+}
+.zoom {
+  overflow: hidden;
+  padding-bottom: 55%;
+}
+.zoom img {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  max-width: 150%;
+  transform: translateX(-50%);
 }
 /*============    ABOUT    ===========*/
 section#about {
   color: #ffffff;
   background: #111111;
+  position: relative;
 }
 section#about .container {
   padding: 50px;
@@ -79,9 +85,12 @@ section#about .main_img {
 section#portfolio {
   padding-top: 50px;
   padding-bottom: 50px;
+  position: relative;
+  background: #ffffff;
 }
 /*============    MAIL    ===========*/
 section#mail {
+  position: relative;
   background: #888888;
 }
 section#mail .container {
